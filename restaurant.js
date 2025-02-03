@@ -16,7 +16,7 @@ async function loadRestaurantDetails() {
     const restaurantId = params.get("id");
   
     try {
-      const response = await fetch("https://kishorep283.github.io/JS-Swigg-Clone-Project/home.json");
+      const response = await fetch("https://suresh-penkey12.github.io/23R-JS-PROJECT-2/home.json");
       const restaurants = await response.json();
       const restaurant = restaurants.separ.find((r) =>parseInt(r.id) === parseInt(restaurantId));
   

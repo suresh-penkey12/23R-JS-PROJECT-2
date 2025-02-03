@@ -1,6 +1,6 @@
 let apiendpoints = null;
 async function getData() {
-  let res = await fetch("https://kishorep283.github.io/JS-Swigg-Clone-Project/home.json");
+  let res = await fetch("https://suresh-penkey12.github.io/23R-JS-PROJECT-2/home.json");
   let obj = await res.json();
   apiendpoints = {
     tiffins: obj.tiffins,

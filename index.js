@@ -175,7 +175,7 @@ inp.addEventListener("input" , (event)=>{
 async function getdata(){
   // http://locahost:3000/cart
 // let res = await fetch("https://kishorep283.github.io/get-data/home.json");
-let res = await fetch("https://kishorep283.github.io/JS-Swigg-Clone-Project/home.json");
+let res = await fetch("https://suresh-penkey12.github.io/23R-JS-PROJECT-2/home.json");
 let data = await res.json();
 localStorage.setItem("data",JSON.stringify(data.cart));
 displaydata(data.cart);

@@ -44,10 +44,10 @@ function cartdisplay(){
     
 
     })
-    delivery=400;
+    delivery=200;
     totalprice.innerText= price;
     totalitems.innerText=items;
-    totalcart.innerText=price+400;
+    totalcart.innerText=price+200;
 
 }
 
