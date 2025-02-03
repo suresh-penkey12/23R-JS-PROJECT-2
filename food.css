@@ -1,0 +1,132 @@
+*{
+    
+    font-family: sans-serif;
+}
+body{
+    background-color: #EBF4F6;
+
+}
+#food-items-container {
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.food-item-card {
+    margin:20px;
+    height:50vh;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius:20px;
+    background-color: #bee0e3;
+}
+.food-item-card .title{
+    padding-left: 5%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+  
+.food-item-card .image{
+    width:100%;
+    height:50%;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.food-item-card span b{
+    font-size: 0.9rem;
+}
+.food-item-card span i{
+    font-size: 0.9rem;
+}
+.food-item-card span{
+    font-weight:500;
+    padding-left: 5%;
+    font-size: 0.9rem;
+}
+.food-item-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+#food-title{
+    padding-left: 10%;
+    font-size: 1.7rem;
+}
+#food-des{
+    padding-left: 10%;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+}
+.tags{
+    display: flex;
+    gap:3%;
+    padding-left: 10%;
+}
+.tags button{
+    padding:15px;
+    border-radius: 30px;
+}
+@media (min-width:900px) and (max-width:1050px){
+    #food-items-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .food-item-card .image{
+        width:100%;
+        height:40%;
+        border-radius: 20px;
+        padding-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+    .tags button{
+        /* padding: 10px 5px; */
+        width: 15%;
+        height: 15%;
+        /* font-size: 1rem; */
+        border-radius: 50% ;
+        /* text-align: ; */
+        /* text-wrap:initial; */
+    }
+    .food-item-card {
+        margin:20px;
+        height:45vh;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius:20px;
+    }
+    .food-item-card:hover{
+        transform: translateY(-10px);
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .food-item-card .title{
+        padding-left: 0%;
+    }
+    
+
+}
+@media (min-width:600px)and (max-width:900px){
+    #food-items-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:600px){
+    #food-items-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .tags button{
+        width:15%;
+        height:15%;
+        border-radius:20%;
+        font-size: 0.6rem;
+        padding-right: 30px;
+    }
+    .tags .delivery-time{
+        padding-right: 50px !important;
+        /* border-radius: 50%; */
+    }
+    body{
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+}

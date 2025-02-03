@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="header">
+      <div class="logo">
+        <h1>Swift</h1>
+        <img src="./main_icon-removebg-preview.png">
+      </div>
+      <ul id="menu-list">
+        <!-- <li><a href="#">Search</a>&nbsp;&nbsp;<i class="fa fa-search" aria-hidden="true"></i></li> -->
+          <li id="login">Login</li>
+        <li><a href="./corporate.html">Swift Corporate</a>&nbsp;&nbsp;<i class="fa fa-globe" aria-hidden="true"></i></li>
+        <li><a href="./partner.html">Partner With Us</a>&nbsp;&nbsp;<i class="fa-solid fa-handshake-angle"></i></li>
+        <!-- <li><a href="./signUp.html">Log In</a>&nbsp;&nbsp;<i class="fa fa-sign-in" aria-hidden="true"></i></li> -->
+        <li><a href="./cart.html">Cart&nbsp;&nbsp;<i class="fa-solid fa-cart-shopping"></i><span class="spa">0</span></a></li>          
+      </ul>
+      <div class="menu-bars">
+        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+      </div>
+    </nav>
+  </header>
+  <section class="show-container">
+    <div class="showmain">
+      <div class="left">
+        <h1>Welcome to <span class = "h1">Swift</span></h1>
+        <h2>The World of Fresh & Tasty Food</h2>
+        <p>Welcome to our food delivery platform, where convenience meets variety! Our website offers a seamless and user-friendly experience, allowing customers to easily explore a wide range of local restaurants and cuisines. Whether you're craving a quick snack, a full meal, or something special, we’ve got you covered.</p>
+        <!-- <p>jksdncksjnfkesjf</p> -->
+      </div>
+      <div class="right">
+        <img src="./homepage_images/chef-removebg-preview.png" alt="Cake">
+      </div>
+    </div>
+  </section>
+  <section class="speakers-section">
+    <h2 class="mind">What's on your Mind</h2>
+    <div id="selectedSpeaker" class="selected-speaker" hidden>
+      <p id="selectedSpeakerDescription" class="selected-speaker-description"></p>
+      <i id="closeSpeakerDetails" class="close-icon fas fa-times-circle" aria-label="Close Speaker Details"></i>
+    </div>
+    <div class="carousel-container">
+      <button class="carousel-control left" aria-label="Previous Speaker"><i
+              class="fa-solid fa-chevron-left"></i></button>
+      <div class="speakers-slider" id="speakersSlider"></div>
+      <button class="carousel-control right" aria-label="Next Speaker"><i
+              class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </section>
+  <div id="authModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <div id="loginFormContainer">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <input type="email" id="loginEmail" name="email" placeholder="Email" required>
+          <input type="password" id="loginPassword" name="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" id="switchToRegister">Register here</a></p>
+        <p id="loginErrorMessage" style="color: red;"></p>
+        <button id="guest">Guest Entry</button>
+      </div>
+      <div id="registerFormContainer" style="display: none;">
+        <h2>Register</h2>
+        <form id="registerForm">
+          <input type="email" id="registerEmail" name="email" placeholder="Email" required>
+          <input type="password" id="registerPassword" name="password" placeholder="Password" required>
+          <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="#" id="switchToLogin">Login here</a></p>
+        <p id="registerErrorMessage" style="color: red;"></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="restaurent">
+    <div class="search">
+      <div class="hyder">
+        <h2>Top restaurents chains in Hyderabad</h2>
+      </div>
+      <div class="tags">
+        <button class="delivery">Fast Delivery</button>
+        <button class="ratings">ratings 4++</button>
+        <button class="th300">Less than 300</button>
+        <button class="f400">300 - 400</button>
+        <input type="text" class="inp" placeholder="search.....">
+
+      </div>
+    </div>
+    <div class ="online-food">  
+          <!-- <div class="sub">
+            <img src="">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+
+          </div> -->
+    </div>  
+  </div>
+  <footer>
+    <div id="foot">
+        <div class="fotty">
+          <div class="icon">
+            <img src="./main_icon-removebg-preview.png" alt="Icon">
+            <!-- <span>Swift</span> -->
+          </div>
+          <p class="copy">&copy;Swift Corporation</p>
+        </div>  
+        <div class="company">
+          <h2>Company</h2>
+          <div class="comp">
+            <a href="#"><p>About Us</p></a>
+            <a href="#"><p>Swift Corporate</p></a>
+            <a href="#"><p>Careers</p></a>
+            <a href="#"><p>Team</p></a>
+            <a href="#"><p>Swift One</p></a>
+            <a href="#"><p>Swift Instamart</p></a>
+            <a href="#"><p>Swift Dineout</p></a>
+            <a href="#"><p>Swift magic</p></a>
+            <a href="#"><p>Minis</p></a>
+          </div>
+        </div>
+        <div class="info">
+          <div class="contact">
+            <h2>Contact us</h2>
+            <div class="cont">
+              <a href="#"><p>Help & Support</p></a>
+              <a href="#"><p>Partner With Us</p></a>
+              <a href="#"><p>Ride With Us</p></a>
+            </div>
+          </div>
+          <div class="legal">
+            <h2>Legal</h2>
+            <div class="leg">
+              <a href="#"><p>Terms & Conditions</p></a>
+              <a href="#"><p>Cookie Policy</p></a>
+              <a href="#"><p>Privacy Policy</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="available">
+          <h2>Available in:</h2>
+          <div class="avail">
+            <a href="#"><p>Bangolore</p></a>
+            <a href="#"><p>Gurugram</p></a>
+            <a href="#"><p>Hyderabad</p></a>
+            <a href="#"><p>Delhi</p></a>
+            <a href="#"><p>Mumbai</p></a>
+            <a href="#"><p>Pune</p></a>
+          </div>
+        </div>
+        <div class="spec">
+          <div class="life">
+            <h2>Life at Swift</h2>
+            <div class="lif">
+              <a href="#"><p>Explore With Swift</p></a>
+              <a href="#"><p>Swift News</p></a>
+              <a href="#"><p>Snackables</p></a>
+            </ul>
+          </div>
+          <div class="social">
+            <h2>Social links</h2>
+            <div class="links">
+              <i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-x-twitter"></i>
+            </div>
+          </div>
+        </div>
+    </div>   
+  </footer>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+      import { getAuth, signInWithEmailAndPassword,createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyDG_Kur0oyNqEXOqShx01utx0X-V18wr4E",
+        authDomain: "projectlogin-6d609.firebaseapp.com",
+        projectId: "projectlogin-6d609",
+        storageBucket: "projectlogin-6d609.firebasestorage.app",
+        messagingSenderId: "612238451985",
+        appId: "1:612238451985:web:baac97acf8644ebf9318b0"
+      };
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    let login=document.getElementById("login");
+    let Login = function (event) {
+    // Show the modal after 3 seconds
+        event.preventDefault();
+    setTimeout(() => {
+      const modal = document.getElementById('authModal');
+      modal.style.display = 'flex'; // Show modal
+    }, 100);
+  
+    // Close the modal when clicking the close button
+    const closeModal = document.getElementById('closeModal');
+    closeModal.addEventListener('click', () => {
+      const modal = document.getElementById('authModal');
+      modal.style.display = 'none';
+    });
+   const modal = document.getElementById("authModal");
+   const loginpage = document.getElementById("guest");
+   loginpage.addEventListener("click",()=>{
+      // window.location.href="index.html";
+       modal.style.display="none";
+   })
+   
+  
+    // Toggle between login and register forms
+    const switchToRegister = document.getElementById('switchToRegister');
+    const switchToLogin = document.getElementById('switchToLogin');
+    const loginFormContainer = document.getElementById('loginFormContainer');
+    const registerFormContainer = document.getElementById('registerFormContainer');
+  
+    switchToRegister.addEventListener('click', (event) => {
+      event.preventDefault();
+      loginFormContainer.style.display = 'none';
+      registerFormContainer.style.display = 'block';
+    });
+  
+    switchToLogin.addEventListener('click', (event) => {
+      event.preventDefault();
+      registerFormContainer.style.display = 'none';
+      loginFormContainer.style.display = 'block';
+    });
+  
+    // Login form submission
+    const loginForm = document.getElementById('loginForm');
+    loginForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const email = document.getElementById('loginEmail').value;
+      const password = document.getElementById('loginPassword').value;
+  
+      
+        signInWithEmailAndPassword(auth,email, password)
+        .then((userCredential) => {
+          alert('Login successful!');
+          document.getElementById('authModal').style.display = 'none';
+           // Close modal
+        })
+        .catch((error) => {
+          document.getElementById('loginErrorMessage').textContent = error.message;
+        });
+    });
+  
+    // Register form submission
+    const registerForm = document.getElementById('registerForm');
+    registerForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const email = document.getElementById('registerEmail').value;
+      const password = document.getElementById('registerPassword').value;
+  
+      
+        createUserWithEmailAndPassword(auth,email, password)
+        .then((userCredential) => {
+          alert('Registration successful!');
+            sessionStorage.setItem("login","islogged");
+          // document.getElementById('authModal').style.display = 'none';
+          // window.location.reload();
+          // document.getElementById("authModal").style.display = "block"; // Close modal
+        })
+        .catch((error) => {
+          document.getElementById('registerErrorMessage').textContent = error.message;
+          window.location.reload();
+        });
+    });
+  };
+      login.addEventListener("click",Login)
+    
+  </script>
+  <script src="./index.js"></script>
+</body>
+</html>
+

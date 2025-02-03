@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <header class="header">MY Cart</header>
+    <div id="head-container">
+        <div class="cart-container">
+            <div class="cart-items">
+
+            </div>
+            <div class="final">
+                <h2>Summary</h2>
+                <p class="fin">Total Itmes :&nbsp;&nbsp;<span class="total-items">0</span></p>
+                <p class="fin">Sub-Total Price :&nbsp;&nbsp;<span class="total-price">0</span></p>
+                <p class="delivery-time">Delivery Charges & Tax:&nbsp;&nbsp;<span class="delivery">200</span></p>
+                <p class="totalprice-tax">Total Price:&nbsp;&nbsp;<span class="total-with-tax">0</span></p>
+
+                <h2>Check-Out</h2>
+                <div class="check">
+                    <div>
+                        <input type="radio" id="credit-card" name="payment-method" value="Credit Card">
+                        <label for="credit-card">Credit Card</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="debit-card" name="payment-method" value="Debit Card">
+                        <label for="debit-card">Debit Card</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="upi" name="payment-method" value="UPI">
+                        <label for="upi">UPI</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="cash-on-delivery" name="payment-method" value="Cash on Delivery">
+                        <label for="cash-on-delivery">Cash on Delivery</label>
+                    </div>
+                    <div class="chk-btn">
+                        <button id="check-btn">Check</button>
+                        <a href="index.html"><button id="home">Home</button></a>
+                    </div>
+                    <div id="modal">
+                        <div class="modal-content">
+                            <span id="closeModal" class="close">&times;</span>
+                            <p>Order Placed &#x1F389;&#x1F389;</p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        
+    </div>
+    <script src="./cart.js" defer></script>
+    
+</body>
+</html>
